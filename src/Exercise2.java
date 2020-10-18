@@ -13,9 +13,13 @@ public class Exercise2 {
         String numberStr = Integer.toString(number);
         String revNumStr = new String();
         for(int i = numberStr.length(); i > 0; i--){
-            revNumStr += Character.toString(numberStr.charAt(i-1));
+            String punctuationSpace = ", ";
+            if(i == 1){
+                punctuationSpace = ".";
+            }
+            revNumStr += Character.toString(numberStr.charAt(i-1)) + punctuationSpace;
         }
-        System.out.println("\n" + revNumStr + ".");
+        System.out.println("\n" + revNumStr);
         in.close();
     }
 }

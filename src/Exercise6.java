@@ -10,14 +10,13 @@ public class Exercise6 {
                 break;
             }
         }
-        int[] arr = new int[number + 1];
+        int[] arr = new int[number];
         arr[0] = 0;
         arr[1] = 1;
-        int sum = 0;
-        for(int i = 2; i < number + 1; i ++){
+        for(int i = 2; i < number; i ++){
             arr[i] = arr[i-1] + arr[i-2];
         }
-        System.out.println("\n" + arr[number] + ".");
+        System.out.println("\n" + arr[number-1] + ".");
         in.close();
     }
 }

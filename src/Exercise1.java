@@ -20,7 +20,9 @@ public class Exercise1 {
         for(int i = lowerBound; i <= upperBound; i+=2){
             sum += i;
         }
-        System.out.printf("\n%,d", sum + ".\n");
+        System.out.println();
+        System.out.printf("%,d", sum);
+        System.out.println(".");
         in.close();
     }
 

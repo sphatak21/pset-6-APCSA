@@ -24,8 +24,8 @@ public class Exercise10 {
             valid = true;
         }
         int cardNumLength = cardnum.length();
-        int firstTwoNums = Integer.valueOf(cardnum.substring(0,2));
-        int firstNum = Integer.valueOf(Character.toString(cardnum.charAt(0)));
+        int firstTwoNums = Integer.parseInt(cardnum.substring(0,2));
+        int firstNum = Integer.parseInt(Character.toString(cardnum.charAt(0)));
 
         if((firstTwoNums == 34 || firstTwoNums == 37) && cardNumLength == 15){
             cardType = "American Express.";
@@ -44,6 +44,7 @@ public class Exercise10 {
         }else{
             System.out.println("\n" + cardType);
         }
+        in.close(); 
     }
 }
 
