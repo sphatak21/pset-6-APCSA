@@ -2,14 +2,13 @@ import java.util.Scanner;
 public class Exercise5 {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
-        int number;
+        int number = 0;
+        boolean run = true;
         boolean prime = true;
-        while (true) {
+        while (run) {
             System.out.print("Enter an integer: ");
             number = in.nextInt();
-            if(number > 0){
-                break;
-            }
+            run = Util.run(number);
         }
         if(number % 2 == 0){
             prime = false;

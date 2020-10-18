@@ -10,14 +10,11 @@ public class Exercise8 {
                 break;
             }
         }
+        int trueHeight = height + 1;
         for(int num = 2; num <= height + 1; num++){
-            System.out.print("\n");
-            for(int i = 0; i < height + 1 - num; i++){
-                System.out.print(" ");
-            }
-            for(int j = 0; j < num; j++){
-                System.out.print("#");
-            }
+            System.out.println();
+            Util.printSpaces(trueHeight, num);
+            Util.printHashes(num);
         }
     }
 }

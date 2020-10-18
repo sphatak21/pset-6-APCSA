@@ -13,21 +13,11 @@ public class Exercise9 {
         int trueHeight = height + 1;
         for(int num = 2; num <= trueHeight; num++){
             System.out.print("\n");
-            printSpaces(trueHeight, num);
-            printHashes(num);
+            Util.printSpaces(trueHeight, num);
+            Util.printHashes(num);
             System.out.print("  ");
-            printHashes(num);
+            Util.printHashes(num);
         }
         in.close();
-    }
-    public static void printSpaces(int h, int n){
-        for(int i = 0; i < h - n; i++){
-            System.out.print(" ");
-        }
-    }
-    public static void printHashes(int n){
-        for(int i = 0; i < n; i++){
-            System.out.print("#");
-        }
     }
 }

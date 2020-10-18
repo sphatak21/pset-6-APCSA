@@ -15,9 +15,13 @@ public class Exercise4 {
             }
         }
         double avg = (double) sum/count;
-        System.out.print("\n");
-        System.out.printf("%,.2f", avg);
-        System.out.print("\n");
+        System.out.println();
+        if (Double.isNaN(avg)){
+            System.out.println("Error: division by zero");
+        }else{
+            System.out.printf("%,.2f", avg);
+            System.out.println();
+        }
         in.close();
     }
 }
